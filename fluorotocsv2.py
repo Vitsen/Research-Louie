@@ -45,7 +45,7 @@ class GUI(Tkinter.Frame):
       g.write("Wavelength")
       for i in range(numfiles):
         g.write(","+str((self.input1[i]).rsplit("/")[-1]))
-      for i in range(1,len(files)/3):
+      for i in range(1,len(files)):
         g.write("\n")
         g.write(files[i][0].split()[0])
         for j in range(numfiles):
